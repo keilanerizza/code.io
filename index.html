@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+    <title>Code.io</title>
+</head>
+
+<body>
+    <nav class="navbar-fixed">
+        <a class="logo" href="#inicio">Code.io</a>
+        <ul>
+            <li><a href="#contato">Fale conosco</a></li>
+            <li><a href="#mapaDoSite">Mapa do site</a></li>
+            <li><a href="#quemSomos">Quem somos</a></li>
+            <li><a href="#opinioes">Opiniões</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <div class="bg-image">
+            <div class="bg-text">
+                <h1>Code.io </h1>
+                <p>Cursos de programação com emissão de certificados</p>
+                <small>100% gratuito</small>
+            </div>
+        </div>
+    </section>
+
+    <section id="cursos">
+        <h1 class="title">Cursos</h1>
+		<div class="containerVideos">
+			<div class="card"><a href="web1.html">Fundamentos de Web Design I</a></div>
+			<div class="card disabled">Sistemas Operacionais</div>
+			<div class="card disabled">Lógica de Programação</div>
+			<div class="card disabled">Inglês Instrumental</div>
+			<div class="card disabled">Metodologia Científica</div>
+			<div class="card disabled">Arquitetura e Organização de Computadores</div>
+		</div>
+    </section>
+
+    <section id="opinioes">
+        <h1 class="title">Opiniões</h1>
+		<div class="containerFale">
+            <div class="container">
+				<form name="enviaOpiniao">
+                    <label for="comentario"><b>Deixe aqui seu comentário:</b></label>
+                
+                    <textarea name="mensagem" placeholder="Digite aqui sua mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+
+                    <hr>
+
+					<button type="submit" class="btnEnviar" id="btnEnviar1" onclick="enviarOpiniao()">Enviar</button>
+				</form>
+            </div>
+          </div>
+    </section>
+
+    <section id="quemSomos">
+        <h1 class="title">Quem Somos</h1>
+		  <div class="card cardQuemSomos">
+            <div class="contatos">
+                <table>
+                    <tr>
+                        <td id="pricol">
+                            <img class="circular" src="./assets/img/code.io_Keilane.png" alt="Keilane"><BR>
+                            <a>Keilane Rizza<a>
+						</td>
+                        <td>
+                            <a href="https://www.facebook.com/keilane.rizza">
+                                <img class="social" src="./assets/img/icon-facebook.png" alt="Facebook">
+                            </a>
+                            <a href="https://www.linkedin.com/in/keilanerizza/">
+                                <img class="social" src="./assets/img/icon-linkedin.png" alt="LinkedIn">
+                            </a><BR>
+                            <a href = "mailto: keilanerizza@gmail.com">E-mail: keilanerizza@gmail.com</a>
+                        </td>
+                    </tr>
+                </table>
+
+
+                <p id="objetivo">Objetivo do projeto: O Projeto Integrador I consiste em uma atividade a ser desenvolvida para
+                    aplicar na prática os conhecimentos adquiridos nas disciplinas daquele período, ampliar a
+                    compreensão dos conteúdos, melhorar a memorização,
+                    exercitar as habilidades de análise e síntese dos assuntos abordados nas disciplinas do
+                    primeiro período, aumentar a motivação no curso,
+                    aumentar a possibilidade de inserção no mercado de trabalho, entre outras.
+
+                    O objetivo é construir um portal de cursos online, de pequeno porte, para disponibilizar
+                    informações sobre os conteúdos apresentados pelos professores das disciplinas do 1º período
+                    do curso de Sistemas para Internet do IFTM, campus Uberlândia Centro.
+
+
+                    Cada curso aborda os conteúdos de cada uma das seguintes disciplinas do primeiro período do
+                    curso de TSPI: Fundamentos de Web Design I, Inglês Instrumental, Arquitetura e Organização
+                    de Computadores, Metodologia Científica, Sistemas Operacionais e Lógica de Programação,
+                    através de vídeoaulas, listas de exercícios online, apostilas, etc.</p>
+            </div>
+          </div>
+    </section>
+
+    <section id="mapaDoSite">
+        <h1 class="title">Mapa do site</h1>
+        <div class="card cardMapa">
+                <ul>
+                    <li><a href="#">Página inicial</a></li>
+                    <li><a href="#cursos">Cursos</a>
+                        <ul>
+                            <li><a href="web1.html">Fundamentos de Web Design I</a></li>
+                            <li><a href="#cursos">Sistemas Operacionais</a></li>
+                            <li><a href="#cursos">Lógica de Programação</a></li>
+                            <li><a href="#cursos">Inglês Instrumental</a></li>
+                            <li><a href="#cursos">Metodologia Científica</a></li>
+                            <li><a href="#cursos">Arquitetura e Organização de Computadores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#opinioes">Opiniões</a></li>
+                    <li><a href="#quemSomos">Quem somos</a></li>
+                    <li><a href="#mapaDoSite">Mapa do site</a></li>
+                    <li><a href="#contato">Fale conosco</a></li>
+                </ul>
+            </div>
+
+    </section>
+
+    <section id="contato">
+        <h1 class="title">Fale Conosco</h1>
+		<div class="containerFale">
+          <div class="container">
+			<form name="enviaMensagem">
+                <label for="nome"><b>Nome</b></label>
+                <input type="text" placeholder="Digite o seu nome" name="nome" id="nome" required />
+                
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Digite o seu Email" name="email" id="email" required />
+
+                <label for="wpp"><b>Assunto</b></label>
+                <input type="text" placeholder="Assunto" name="assunto" id="assunto" required />
+
+                <textarea name="mensagem" placeholder="Digite aqui sua mensagem" id="mensagem" cols="30" rows="10" required /></textarea>
+
+                <hr>
+
+                <button type="submit" class="btnEnviar" id="btnEnviar" >Enviar</button>
+			</form>
+          </div>
+		</div>	
+    </section>
+
+</body>
+</html>

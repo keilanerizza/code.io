@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Code.io</title>
+</head>
+
+<body>
+    <nav class="navbar-fixed">
+        <a class="logo" href="index.html">Code.io</a>
+        <ul>
+            <li><a href="index.html#contato">Fale conosco</a></li>
+            <li><a href="index.html#mapaDoSite">Mapa do site</a></li>
+            <li><a href="index.html#quemSomos">Quem somos</a></li>
+            <li><a href="index.html#opinioes">Opiniões</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+        </ul>
+    </nav>
+    <section>
+        <!-- nome do autor (narrador), o tema a ser apresentado, o nome do curso no qual a videoaula está inserida, 
+            o e-mail do apresentador e os tópicos a serem abordados ao longo da apresentação. -->
+
+        <h1 class="title titleWeb1">Curso Fundamentos de Web Desing 1</h1>
+
+        <div class="divVideo">
+            <div class="card cardVideo">
+                <h1>Video Aula 1</h1>
+                <h2>HTML básico</h2>
+                <img id="videoAula" class="videoAula" src="./assets/img/htmlbasico.png" /><BR>
+                <a class="botaoVideo" href="./assets/pdf/htmlbasico.pdf">Material de apoio</a><BR>
+                <a class="botaoVideo" href="exercicios1.html">Lista de exercícios</a><BR>
+                <p>Autora: Keilane Rizza</p>
+            </div>
+
+            <div class="card cardVideo">
+                <h1>Video Aula 2</h1>
+                <h2>CSS básico</h2>
+                <img id="videoAula2" class="videoAula" src="./assets/img/cssbasico.png" /><BR>
+                <a class="botaoVideo" href="./assets/pdf/cssbasico.pdf">Material de apoio</a><BR>
+                <a class="botaoVideo" href="exercicios2.html">Lista de exercícios</a><BR>
+                <p>Autora: Keilane Rizza</p>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <video width="95%" height="95%" controls>
+                    <source src="./assets/video/html.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+        <div id="myModal2" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <video width="95%" height="95%" controls>
+                        <source src="./assets/video/css.mp4" type="video/mp4">
+                    </video>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var modal2 = document.getElementById("myModal2");
+
+        var btn = document.getElementById("videoAula");
+        var btn2 = document.getElementById("videoAula2");
+
+        var span = document.getElementsByClassName("close")[0];
+        var span2 = document.getElementsByClassName("close")[1];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        span2.onclick = function () {
+            modal2.style.display = "none";
+        }
+
+    </script>
+</body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Code.io</title>
+
+    <script language="javascript" type="text/javascript">
+
+        function limpar() {
+            var ele = document.getElementsByClassName("quest");
+            for (var i = 0; i < ele.length; i++)
+                ele[i].checked = false;
+        }
+
+        function validar() {
+            var pontos = 0;
+            var msg = "";
+            var q1 = form1.p1.value;
+            var q2 = form1.p2.value;
+            var q3 = form1.p3.value;
+            var q4 = form1.p4.value;
+            var q5 = form1.p5.value;
+            if (q1 == 3) {
+                pontos++;
+                msg += "\nAcertou a questão 1";
+            }
+            if (q2 == 3) {
+                pontos++;
+                msg += "\nAcertou a questão 2";
+            }
+            if (q3 == 1) {
+                pontos++;
+                msg += "\nAcertou a questão 3";
+            }
+            if (q4 == 4) {
+                pontos++;
+                msg += "\nAcertou a questão 4";
+            }
+            if (q5 == 2) {
+                pontos++;
+                msg += "\nAcertou a questão 5";
+            }
+            alert("Acertos: " + pontos + msg);
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar-fixed">
+        <a class="logo" href="index.html">Code.io</a>
+        <ul>
+            <li><a href="index.html#contato">Fale conosco</a></li>
+            <li><a href="index.html#mapaDoSite">Mapa do site</a></li>
+            <li><a href="index.html#quemSomos">Quem somos</a></li>
+            <li><a href="index.html#opinioes">Opiniões</a></li>
+            <li><a href="index.html#cursos">Cursos</a></li>
+        </ul>
+    </nav>
+    <div class="cardFielset">
+        <h1 class="title">Questionário 1 de Fundamentos de Web Design I</h1>
+        <form name="form1" class="form1">
+            <p>1. O que significa o acrônimo HTML?</p>
+            <input type="radio" class="quest" name="p1" value="1">Hyper Test Mark Language<br>
+            <input type="radio" class="quest" name="p1" value="2">Hyper Text Mark Launch<br>
+            <input type="radio" class="quest" name="p1" value="3">Hyper Text Markup Language<br>
+            <input type="radio" class="quest" name="p1" value="4">Hyper Tense Markup Language<br>
+            <br>
+            <p>2. O que é uma TAG em HTML?</p>
+            <input type="radio" class="quest" name="p2" value="1">É um tipo de formatador de parágrafos<br>
+            <input type="radio" class="quest" name="p2" value="2">São palavras que servem justamente como uma etiqueta para guardar
+            informações.<br>
+            <input type="radio" class="quest" name="p2" value="3">É uma estrutura de linguagem de marcação contendo instruções, tendo
+            uma marca de início e outra de fim para que o navegador possa renderizar uma página.<br>
+            <input type="radio" class="quest" name="p2" value="4">É um operador lógico da linguagem HTML.<br>
+            <br>
+            <p>3. Qual tag determina o início de um código html?</p>
+            <input type="radio" class="quest" name="p3" value="1">html
+            <input type="radio" class="quest" name="p3" value="2">head
+            <input type="radio" class="quest" name="p3" value="3">a
+            <input type="radio" class="quest" name="p3" value="4">p
+            <br>
+            <p>4. Qual a sintaxe correta para apresentar uma imagem em HTML?</p>
+            <input type="radio" class="quest" name="p4" value="1">
+            < img="www.imagem.com/imagem.jpg"><br>
+                <input type="radio" class="quest" name="p4" value="2">
+                < img source="www.imagem.com/imagem.jpg"><br>
+                    <input type="radio" class="quest" name="p4" value="3">
+                    < imagem="www.imagem.com/imagem.jpg"><br>
+                        <input type="radio" class="quest" name="p4" value="4">
+                        < img src="www.imagem.com/imagem.jpg"><br>
+                            <br>
+                            <p>5. Escolha a TAG que não existe na linguagem html:</p>
+                            <input type="radio" class="quest" name="p5" value="1">body
+                            <input type="radio" class="quest" name="p5" value="2">font-size
+                            <input type="radio" class="quest" name="p5" value="3">table
+                            <input type="radio" class="quest" name="p5" value="4">input
+                            <br>
+        </form>
+        <div class="acoesForm1">
+            <input class="botao" type="button" value="Limpar" onclick="limpar()">
+            <input class="botao" type="button" value="Conferir" onclick="return validar()">
+			<input class="botao" type="button" value="Voltar" onClick="history.go(-1)">
+        </div>
+    </div>
+</body>
+
+</html>
